@@ -15,7 +15,7 @@ namespace Client
             //OR easier way 
             //To add new right click on project "Add Service Reference"
             //Update right click on "Service References->ServiceReference1" then "Update Service Reference"
-            ServerServiceClient client = new ServerServiceClient();
+            ServerServiceClient client = new ServerServiceClient("BasicHttpBinding_IServerService", "http://localhost:8000/ServerService");
             var result = client.Test("test text");
 
             Console.WriteLine("Session Name:");
