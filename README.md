@@ -1,6 +1,8 @@
 # wcf-sample-server-client
 C# based WCF server client sample application (better alternative for .net to TCP sockets etc)
 
+Server app must be "Run as administrator" or when testing via Visual Studio also it must be "Run as administrator"
+
 Server interface + Class
 ```
 [ServiceContract]
